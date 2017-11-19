@@ -1,0 +1,21 @@
+image: thenatureofsoftware/consul:VERSION
+tags: ['VERSION', 'latest']
+manifests:
+  -
+    image: thenatureofsoftware/consul-arm:VERSION
+    tags: ['VERSION', 'latest']
+    platform:
+      architecture: arm
+      os: linux
+  -
+    image: thenatureofsoftware/consul-arm64:VERSION
+    tags: ['VERSION', 'latest']
+    platform:
+      architecture: arm64
+      os: linux
+  -
+    image: thenatureofsoftware/consul-amd64:VERSION
+    tags: ['VERSION', 'latest']
+    platform:
+      architecture: amd64
+      os: linux
